@@ -14,7 +14,7 @@
           <li><a href="#">Live</a></li>
         </ul>
       </nav>
-      <h1>DSA to Development</h1>
+      <h1 id="courseTitle">DSA to Development</h1>
       <h2>A Complete Guide</h2>
     </header>
 
@@ -32,5 +32,20 @@
         <button>Download Brochure</button>
       </section>
     </main>
+
+    <!-- Js Code  -->
+
+    <script>
+      // Assuming the course title is passed as a query parameter
+      const params = new URLSearchParams(window.location.search);
+      const courseTitle = params.get("title");
+
+      if (courseTitle) {
+        document.getElementById("courseTitle").innerText = courseTitle;
+      } else {
+        document.getElementById("courseTitle").innerText =
+          "No course title found";
+      }
+    </script>
   </body>
 </html>

@@ -6,6 +6,7 @@ const methodOverride = require("method-override");
 const ejsMate = require("ejs-mate");
 const bcrypt = require("bcrypt");
 const collection = require("./config");
+const bodyParser = require("body-parser");
 
 // const MONGO_URL = "mongodb://127.0.0.1:27017/Study-website";
 
@@ -30,6 +31,18 @@ app.use(express.urlencoded({ extended: true }));
 app.use(methodOverride("_method"));
 app.engine("ejs", ejsMate);
 app.use(express.static(path.join(__dirname, "/public")));
+
+app.use(bodyParser.json());
+
+// fetch title from html
+
+app.post("/api/sendCourseTitle", (req, res) => {
+  const courseTitle = req.body.title;
+  console.log(courseTitle); // Do something with the title
+  // Store the title or pass it to another route as needed
+  res.json({ message: "Title received", title: courseTitle });
+});
+//
 
 // for main(index-page)
 app.get("/index", (req, res) => {
