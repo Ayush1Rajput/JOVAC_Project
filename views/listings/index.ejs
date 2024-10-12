@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <link rel="stylesheet" href="../public/css/index.css" /> -->
+    <link rel="stylesheet" href="/css/style.css" />
+
+    <title>Study Space</title>
+  </head>
+  <body>
+    <div class="conatiner">
+      <div class="navbar">
+        <p>Study <span>Space</span></p>
+        <div class="btn">
+          <button><a href="./index">Home</a></button>
+          <button><a href="">Portfolio</a></button>
+          <button><a href="./courses">Courses</a></button>
+          <button><a href="">Service</a></button>
+          <button><a href="./about">Contact</a></button>
+        </div>
+        <input type="search" name="" id="" placeholder="Search here..." />
+        <div class="log-sign">
+          <button><a href="./login">Log-in</a></button>
+          <button><a href="./signup">SignUp</a></button>
+        </div>
+      </div>
+
+      <div class="main">
+        <div class="content">
+          <h1>
+            Improve your skills by<br />Study with
+            <span style="color: rgb(4, 4, 167)">Study Space</span>.
+          </h1>
+          <p>
+            Unlock your full potential in your field with our courses.<br />Learn
+            industry-leading techniques, design real-world projects from
+            scracth.
+          </p>
+          <button id="btn-startlearning">Start Learning</button>
+        </div>
+        <div class="main-img"></div>
+      </div>
+
+      <div class="sub_img">
+        <h2 id="heading">
+          Popular Subject on
+          <span style="font-size: 3rem; color: rgb(241, 241, 241)"
+            >Study Space</span
+          >
+        </h2>
+
+        <div id="course-container">
+          <div class="course-box">
+            <div class="box">
+              <img src="./img/DSA.png" alt="" />
+              Data Structures
+            </div>
+            <div class="box">
+              <img src="./img/Algorithms.png" alt="" />
+              Algorithm
+            </div>
+            <div class="box">
+              <img src="./img/computer.png" alt="" />
+              Computer
+            </div>
+            <div class="box">
+              <img src="./img/Cloud.png" alt="" />
+              Cloud
+            </div>
+          </div>
+          <div class="course-box">
+            <div class="box">
+              <img src="./img/networking.png" alt="" />
+              Networking
+            </div>
+            <div class="box">
+              <img src="./img/Operating-system.png" alt="" />
+              Operating system
+            </div>
+            <div class="box">
+              <img src="./img/DBMS.png" alt="" />
+              DBMS
+            </div>
+            <div class="box">
+              <img src="./img/block-chain.png" alt="" />
+              Block-Chain
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="services">
+        <h1>Services</h1>
+        <div class="service-layout">
+          <div class="service-box">
+            <img src="./img/Free Cources.png" alt="" />
+            <p>Free Online Courses</p>
+          </div>
+          <div class="service-box">
+            <img src="./img/Study-material.png" alt="" width="60px" />
+            <p>Study Materials and Resources</p>
+          </div>
+          <div class="service-box">
+            <img src="./img/Live class.png" alt="" width="90px" />
+            <p>Live Classes and Webinars</p>
+          </div>
+        </div>
+        <div class="service-layout">
+          <div class="service-box">
+            <img src="./img/interview.png" alt="" />
+            <p>Mock Interviews</p>
+          </div>
+          <div class="service-box">
+            <img src="./img/Career guide.png" alt="" />
+            <p>Career Guidance</p>
+          </div>
+          <div class="service-box">
+            <img src="./img/support.png" alt="" />
+            <p>24x7 Online Support</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- User Form  -->
+
+      <div class="form-box">
+        <div class="form-title">
+          <h1>Get in Touch with Us</h1>
+          <p>
+            If you have any questions or need assistance, please fill out the
+            form on the right. Our team is here to help you with your
+            study-related queries and guide you through your academic journey.
+            Don't hesitate to reach out!
+          </p>
+        </div>
+        <form>
+          <div class="form-row">
+            <div class="form-group col-md-4 mb-3">
+              <label for="validationDefault01">First name</label>
+              <input
+                type="text"
+                class="form-control"
+                id="validationDefault01"
+                placeholder="First name"
+                value="Mark"
+                required
+              />
+            </div>
+            <div class="form-group col-md-4 mb-3">
+              <label for="validationDefault02">Last name</label>
+              <input
+                type="text"
+                class="form-control"
+                id="validationDefault02"
+                placeholder="Last name"
+                value="Otto"
+                required
+              />
+            </div>
+            <div class="form-group col-md-4 mb-3">
+              <label for="validationDefaultUsername">Username</label>
+              <div class="input-group">
+                <div class="input-group-prepend"></div>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="validationDefaultUsername"
+                  placeholder="Username"
+                  aria-describedby="inputGroupPrepend2"
+                  required
+                />
+              </div>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group col-md-6 mb-3">
+              <label for="validationDefault03">City</label>
+              <input
+                type="text"
+                class="form-control"
+                id="validationDefault03"
+                placeholder="City"
+                required
+              />
+            </div>
+            <div class="form-group col-md-3 mb-3">
+              <label for="validationDefault04">State</label>
+              <input
+                type="text"
+                class="form-control"
+                id="validationDefault04"
+                placeholder="State"
+                required
+              />
+            </div>
+            <div class="form-group col-md-3 mb-3">
+              <label for="validationDefault05">Zip</label>
+              <input
+                type="text"
+                class="form-control"
+                id="validationDefault05"
+                placeholder="Zip"
+                required
+              />
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                value=""
+                id="invalidCheck2"
+                required
+              />
+              <label class="form-check-label" for="invalidCheck2">
+                Agree to terms and conditions
+              </label>
+            </div>
+          </div>
+          <button class="btn btn-primary" type="submit">Submit form</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- Footer  -->
+
+    <footer>
+      <h1 style="color: black">Study <span>Space</span></h1>
+      <p>Copyright &copy; All rights are reserved to Study space</p>
+      <div id="icons">
+        <i class="fa-brands fa-facebook icon"></i>
+        <i class="fa-brands fa-instagram icon"></i>
+        <i class="fa-brands fa-x-twitter icon"></i>
+        <i class="fa-brands fa-linkedin icon"></i>
+        <i class="fa-brands fa-youtube icon"></i>
+      </div>
+      <div class="address">
+        <i class="fa-solid fa-location-dot icon"> GLA University, Mathura</i>
+      </div>
+    </footer>
+  </body>
+</html>

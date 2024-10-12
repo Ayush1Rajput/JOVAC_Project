@@ -1,0 +1,75 @@
+/* Basic styling */
+body,
+h1,
+h2,
+p,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: white;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: black;
+  background-color: #f4f4f4;
+  padding: 2rem;
+  background: linear-gradient(to right, #0c0c6b, #1d7ee5);
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  background: white;
+  padding: 2rem;
+  border-radius: 8px;
+  border: 2px solid white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background: linear-gradient(to bottom, #0c0c6b, #1d7ee5);
+}
+
+h1,
+h2 {
+  color: black;
+  margin-bottom: 1rem;
+}
+
+h1 {
+  margin-bottom: 0.5rem;
+}
+
+.team {
+  margin-top: 2rem;
+}
+
+.team-member {
+  margin-bottom: 1.5rem;
+}
+
+.team-member h3 {
+  margin-bottom: 0.5rem;
+}
+
+.team-member p {
+  margin-bottom: 0.5rem;
+}
+
+.contact-info {
+  margin-top: 2rem;
+}
+
+.contact-info p {
+  margin-bottom: 0.5rem;
+}
+
+.contact-info a {
+  color: rgb(0, 85, 255);
+  text-decoration: none;
+}
+
+.contact-info a:hover {
+  text-decoration: underline;
+}

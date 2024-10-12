@@ -1,0 +1,59 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* height: 20px; */
+  margin: 1.4rem 6rem;
+  /* border-bottom: 2px solid black; */
+  position: sticky;
+  top: 0;
+  background-color: white;
+}
+.navbar h1 span {
+  color: var(--color-primary);
+}
+.main-content h1 span {
+  color: var(--color-primary);
+}
+.navbar a {
+  text-decoration: none;
+  color: var(--color-grey);
+  margin: 0 0.6rem;
+  font-weight: 600;
+  transition: 1.5ms;
+  cursor: pointer;
+}
+.navbar a:hover {
+  color: var(--color-primary);
+}
+.navbar button {
+  margin: 0 0.8rem;
+}
+#btn-login {
+  padding: 0.5rem 1.6rem;
+  background-color: var(--color-white);
+  border: 2px solid var(--color-primary);
+  border-radius: 0.6rem;
+  cursor: pointer;
+}
+#btn-signup {
+  padding: 0.5rem 1.6rem;
+  background-color: var(--color-primary);
+  border: 2px solid var(--color-primary);
+  border-radius: 0.6rem;
+  color: var(--color-white);
+  cursor: pointer;
+}
+#btn-signup:hover {
+  background-color: var(--color-secondary);
+  border-color: var(--color-secondary);
+  box-shadow: 5px 5px 4px var(--color-primary);
+}
+#btn-login:hover {
+  background-color: var(--color-secondary);
+  border-color: var(--color-secondary);
+  box-shadow: 5px 5px 4px var(--color-primary);
+}
+button:hover {
+  box-shadow: 5px 5px 4px var(--color-primary);
+}
