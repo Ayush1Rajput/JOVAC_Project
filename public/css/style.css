@@ -50,6 +50,11 @@ span {
   align-items: center;
 }
 
+#btn-startlearning a {
+  text-decoration: none;
+  color: white;
+}
+
 button {
   background-color: var(--color-white);
   border: none;
@@ -57,6 +62,7 @@ button {
 
 button:hover {
   color: var(--color-secondary-light);
+  background-color: #007bff;
 }
 
 input {
@@ -194,7 +200,7 @@ input {
     url("../img/study-img.jpg");
   /* min-height: 660px;
   max-height: 100vh; */
-  height: 100vh;
+  height: 120vh;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
