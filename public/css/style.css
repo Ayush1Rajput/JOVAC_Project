@@ -135,7 +135,7 @@ input {
   height: 30rem;
   width: 40rem;
   margin-top: 8%;
-  background-image: url("../img/feature-img2.jpg");
+  background-image: url("../img/feature-img2.png");
   background-size: cover;
   margin-right: 50px;
   /* filter: drop-shadow(0 20px 10px rgba(0, 0, 0, 0.2)); */
@@ -219,7 +219,7 @@ input {
   justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
-  margin: 3rem;
+  margin: 2rem;
   border: 2px solid black;
 }
 .service-box {
@@ -355,7 +355,7 @@ form {
 /* Footer CSS */
 
 footer {
-  height: 45vh;
+  height: 50vh;
   /* margin-top: 40px; */
   background-color: var(--color-white);
   color: black;
@@ -374,12 +374,14 @@ span {
 footer p {
   font-size: 1.5rem;
 }
-.icon {
+#icons i {
   width: 3rem;
   height: 2rem;
   font-size: 2rem;
   margin: 10px;
 }
-#icons i:hover {
-  box-shadow: 5px 5px 20px white;
+
+.address i {
+  margin-top: 10px;
+  font-size: 2rem;
 }
