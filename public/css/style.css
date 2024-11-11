@@ -100,7 +100,7 @@ input {
   /* margin-top: 200px; */
   height: 100vh;
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   align-items: center;
   justify-content: space-around;
   background-color: rgba(77, 73, 73, 0.1);
@@ -132,7 +132,8 @@ input {
   background-color: var(--color-secondary-light);
 }
 .main-img {
-  height: 30rem;
+  min-height: 25rem;
+  max-height: 28rem;
   width: 40rem;
   margin-top: 8%;
   background-image: url("../img/feature-img2.png");
@@ -218,7 +219,7 @@ input {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   margin: 2rem;
   border: 2px solid black;
 }
