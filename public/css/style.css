@@ -112,7 +112,8 @@ input {
 }
 
 .content h1 {
-  font-size: 2rem;
+  font-size: 1.8rem;
+  text-align: justify;
 }
 .content p {
   padding-top: 10px;
@@ -138,7 +139,8 @@ input {
   margin-top: 8%;
   background-image: url("../img/feature-img2.png");
   background-size: cover;
-  margin-right: 50px;
+  margin-right: 40px;
+  margin-left: 20px;
   /* filter: drop-shadow(0 20px 10px rgba(0, 0, 0, 0.2)); */
 }
 
@@ -256,10 +258,11 @@ input {
 
 /* Form CSS  */
 form {
-  margin-top: 50px;
+  margin: 50px 30px;
   border: 2px solid black;
-  padding: 80px;
+  padding: 40px;
   border-radius: 10px;
+  width: 70%;
 }
 .form-box {
   display: flex;
@@ -268,6 +271,8 @@ form {
 }
 .form-title {
   width: 40vw;
+  margin: 0px 20px;
+  text-align: justify;
 }
 .form-title h1 {
   font-size: 3rem;
@@ -385,4 +390,124 @@ footer p {
 .address i {
   margin-top: 10px;
   font-size: 2rem;
+}
+
+@media (max-width: 768px) {
+  /* Navbar */
+  .navbar {
+    height: 3rem;
+    padding: 0.5rem 1rem;
+  }
+  .navbar p {
+    font-size: 1.5rem;
+  }
+  .btn {
+    width: 100%;
+  }
+  .log-sign {
+    display: none;
+  }
+
+  /* Main */
+  .main {
+    flex-direction: column;
+    align-items: center;
+  }
+  .content {
+    width: 90%;
+    margin-top: 2rem;
+  }
+  .main-img {
+    width: 80%;
+    margin: 1rem auto;
+    min-height: 20rem;
+    max-height: 25rem;
+  }
+
+  /* Courses */
+  #course-container {
+    width: 100%;
+    margin: 2rem auto;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .course-box {
+    width: 40%;
+    margin: 10px auto;
+  }
+  .box {
+    width: 100%;
+    font-size: 1rem;
+  }
+  .box img {
+    width: 40px;
+    height: 50px;
+  }
+
+  /* Services */
+  .services {
+    height: auto;
+    padding: 2rem;
+  }
+  .services h1 {
+    font-size: 2.5rem;
+    padding-top: 2rem;
+  }
+  .service-layout {
+    flex-direction: column;
+    align-items: center;
+  }
+  .service-box {
+    width: 80%;
+    margin: 1rem auto;
+  }
+
+  /* Form */
+  form {
+    width: 90%;
+    margin: 2rem auto;
+    padding: 2rem;
+  }
+  .form-box {
+    flex-direction: column;
+    align-items: center;
+  }
+  .form-title {
+    width: 100%;
+    margin: 1rem auto;
+  }
+  .form-title h1 {
+    font-size: 2rem;
+    padding: 1rem;
+  }
+  .form-row {
+    flex-wrap: wrap;
+  }
+  .form-group {
+    margin-bottom: 0.5rem;
+  }
+
+  /* Footer */
+  footer {
+    height: auto;
+    padding: 2rem;
+  }
+  footer h1,
+  span {
+    font-size: 2.5rem;
+    padding: 1rem;
+  }
+  footer p {
+    font-size: 1rem;
+  }
+  #icons i {
+    width: 2rem;
+    height: 1.5rem;
+    font-size: 1.5rem;
+    margin: 5px;
+  }
+  .address i {
+    margin-top: 5px;
+    font-size: 1.5rem;
+  }
 }
