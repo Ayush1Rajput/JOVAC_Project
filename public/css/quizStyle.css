@@ -2,6 +2,15 @@
 @import url("https://fonts.googleapis.com/css?family=Dancing+Script&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Open+Sans&display=swap");
 
+:root {
+  --color-primary: rgb(0, 0, 38);
+  --color-secondary: rgb(4, 4, 167);
+  --color-secondary-light: rgb(29, 126, 229);
+
+  --color-black: rgb(0, 0, 0);
+  --color-white: rgb(255, 255, 255);
+  --color-grey: rgb(56, 55, 55);
+}
 * {
   box-sizing: border-box;
   margin: 0;
@@ -21,11 +30,11 @@ body {
   width: 5px;
 }
 ::-webkit-scrollbar-thumb {
-  background: #fa4b37;
+  background: var(--color-secondary);
   border-radius: 5px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: #df2771;
+  background: var(--color-secondary-light);
 }
 
 /*NAVIGATION BAR*/
@@ -74,12 +83,16 @@ button {
 }
 
 .nav ul li a:hover {
-  color: #fa4b37;
+  color: var(--color-secondary);
 }
 
 .nav button {
   padding: 9px 25px;
-  background: linear-gradient(to right, #fa4b37, #df2771);
+  background: linear-gradient(
+    to right,
+    var(--color-secondary),
+    var(--color-secondary-light)
+  );
   color: #fff;
   border: none;
   border-radius: 5px;
@@ -106,7 +119,7 @@ button {
   width: 300px;
   border: none;
   outline: none;
-  border-bottom: 2px solid #fa4b37;
+  border-bottom: 2px solid var(--color-secondary);
   padding: 9px;
 }
 
@@ -155,7 +168,7 @@ button {
   border: none;
   border-radius: 5px;
   color: #fff;
-  background: #df2771;
+  background: var(--color-secondary-light);
   outline: none;
   cursor: pointer;
   box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
@@ -194,7 +207,7 @@ button {
 .left-side li {
   list-style-type: none;
   cursor: pointer;
-  color: #fa4b37;
+  color: var(--color-secondary);
   font-weight: 700;
   font-size: 1.2em;
   margin-bottom: 20px;
@@ -218,7 +231,7 @@ button {
   border: none;
 }
 .main-frame {
-  background: url(../images/extra/quiz.jpg);
+  background: url(IMG/extra/quiz.jpg);
   background-size: cover;
   background-position: center;
 }

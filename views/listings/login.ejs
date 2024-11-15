@@ -23,17 +23,17 @@
         </button>
       </div>
       <div class="social-icons">
-        <img src="images/icon/fb2.png" />
-        <img src="images/icon/insta2.png" />
-        <img src="images/icon/tt2.png" />
+        <img src="IMG/icon/fb2.png" />
+        <img src="IMG/icon/insta2.png" />
+        <img src="IMG/icon/tt2.png" />
       </div>
-
       <!-- Login Form -->
-      <form id="login" class="input-group" action="index.html">
+      <form id="login" class="input-group" action="/login" method="POST">
         <div class="inp">
-          <img src="images/icon/user.png" /><input
+          <img src="IMG/icon/user.png" /><input
             type="text"
-            id="email"
+            id="username"
+            name="username"
             class="input-field"
             placeholder="Username or Phone Number"
             style="width: 88%; border: none"
@@ -41,9 +41,10 @@
           />
         </div>
         <div class="inp">
-          <img src="images/icon/password.png" /><input
+          <img src="IMG/icon/password.png" /><input
             type="password"
             id="password"
+            name="password"
             class="input-field"
             placeholder="Password"
             style="width: 88%; border: none"
@@ -53,27 +54,25 @@
         <input type="checkbox" class="check-box" />Remember Password
         <button type="submit" class="submit-btn">Log In</button>
       </form>
-
       <div class="other" id="other">
-        <div class="instead">
-          <h3>or</h3>
-        </div>
+        <div class="instead"><h3>or</h3></div>
         <button class="connect" onclick="google()">
-          <img src="images/icon/google.png" /><span>Sign in with Google</span>
+          <img src="IMG/icon/google.png" /><span>Sign in with Google</span>
         </button>
       </div>
-
       <!-- Registration Form -->
-      <form id="register" class="input-group">
+      <form id="register" class="input-group" action="/signup" method="POST">
         <input
           type="text"
           class="input-field"
-          placeholder="Full Name"
+          name="username"
+          placeholder="Username or Mobile number"
           required="required"
         />
         <input
           type="email"
           class="input-field"
+          name="email"
           placeholder="Email Address"
           required="required"
         />
@@ -81,14 +80,14 @@
           type="password"
           class="input-field"
           placeholder="Create Password"
-          name="psame"
+          name="password"
           required="required"
         />
         <input
           type="password"
           class="input-field"
           placeholder="Confirm Password"
-          name="psame"
+          name="confirm_password"
           required="required"
         />
         <input
@@ -102,7 +101,6 @@
         </button>
       </form>
     </div>
-
     <script src="/javaScript/script.js"></script>
   </body>
 </html>

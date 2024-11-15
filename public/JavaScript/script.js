@@ -72,7 +72,7 @@ function login() {
 function goFurther() {
   if (document.getElementById("chkAgree").checked == true) {
     document.getElementById("btnSubmit").style =
-      "background: linear-gradient(to right, #FA4B37, #DF2771);";
+      "background: linear-gradient(to right, rgb(29, 126, 229), rgb(4, 4, 167));";
   } else {
     document.getElementById("btnSubmit").style = "background: lightgray;";
   }
@@ -137,26 +137,26 @@ function display(n) {
   img2.style = "display: none;";
   img3.style = "display: none;";
   img4.style = "display: none;";
-  s1.style = "background: #DF2771; color: #FFF;";
-  s2.style = "background: #DF2771; color: #FFF;";
-  s3.style = "background: #DF2771; color: #FFF;";
-  s4.style = "background: #DF2771; color: #FFF;";
+  s1.style = "background: rgb(29, 126, 229); color: #FFF;";
+  s2.style = "background: rgb(29, 126, 229); color: #FFF;";
+  s3.style = "background: rgb(29, 126, 229); color: #FFF;";
+  s4.style = "background: rgb(29, 126, 229); color: #FFF;";
 
   if (n == 1) {
     img1.style = "display: block;";
-    s1.style = "background: #E5E8EF; color: #DF2771;";
+    s1.style = "background: #E5E8EF; color: rgb(29, 126, 229);";
   }
   if (n == 2) {
     img2.style = "display: block;";
-    s2.style = "background: #E5E8EF; color: #DF2771;";
+    s2.style = "background: #E5E8EF; color: rgb(29, 126, 229);";
   }
   if (n == 3) {
     img3.style = "display: block;";
-    s3.style = "background: #E5E8EF; color: #DF2771;";
+    s3.style = "background: #E5E8EF; color: rgb(29, 126, 229);";
   }
   if (n == 4) {
     img4.style = "display: block;";
-    s4.style = "background: #E5E8EF; color: #DF2771;";
+    s4.style = "background: #E5E8EF; color: rgb(29, 126, 229);";
   }
 }
 

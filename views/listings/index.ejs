@@ -1,17 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- <link rel="stylesheet" href="../public/css/index.css" /> -->
-    <link rel="stylesheet" href="/css/style.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
-      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
+    <!-- <link rel="shortcut icon" type="png" href="IMG/icon/favicon.png" /> -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Comaptible" content="IE=edge" />
+    <title>Study Space</title>
+    <meta name="desciption" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <script type="text/javascript" src="/javaScript/script.js"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
 
     <script>
@@ -23,8 +20,6 @@
         }
       });
     </script>
-
-    <title>Study Space</title>
   </head>
   <body>
     <!-- Navigation Bar -->
@@ -42,39 +37,43 @@
         </ul>
         <div class="srch">
           <input type="text" class="search" placeholder="Search here..." /><img
-            src="IMG/search.png"
+            src="IMG/icon/search.png"
             alt="search"
             onclick="slide()"
           />
         </div>
-        <a class="get-started" href="login">Get Started</a>
-        <img src="IMG/menu.png" class="menu" onclick="sideMenu(0)" alt="menu" />
+        <a class="get-started" href="/login">Get Started</a>
+        <img
+          src="IMG/icon/menu.png"
+          class="menu"
+          onclick="sideMenu(0)"
+          alt="menu"
+        />
       </nav>
       <div class="head-container">
         <div class="quote">
-          <p>
-            The beautiful thing about learning is that nobody can take it away
-            from you
-          </p>
+          <p>Learning is an enduring treasure that no one can strip from us</p>
           <h5>
-            Education is the process of facilitating learning, or the
-            acquisition of knowledge, skills, values, beliefs, and habits.
-            Educational methods include teaching, training, storytelling,
-            discussion and directed research!
+            Education is the process of enabling learning and the acquisition of
+            knowledge, skills, values, beliefs, and habits. Methods include
+            teaching, training, storytelling, discussion, and research, all
+            aimed at fostering comprehensive understanding and growth. Through
+            education, individuals gain the tools to navigate and contribute to
+            society effectively.!
           </h5>
         </div>
         <div class="svg-image">
-          <img src="IMG/feature-img2.png" alt="svg" />
+          <img src="IMG/extra/feature-img2.png" alt="svg" />
         </div>
       </div>
       <div class="side-menu" id="side-menu">
         <div class="close" onclick="sideMenu(1)">
-          <img src="IMG/close.png" alt="" />
+          <img src="IMG/icon/close.png" alt="" />
         </div>
-        <div class="user">
-          <img src="images/creator/roshan.jpeg" alt="Username" />
+        <!-- <div class="user">
+          <img src="IMG/creator/ayush.jpeg" alt="Username" />
           <p>XYZ</p>
-        </div>
+        </div> -->
         <ul>
           <li><a href="#about_section">About</a></li>
           <li><a href="#portfolio_section">Portfolio</a></li>
@@ -95,42 +94,38 @@
       <center>
         <div class="cbox">
           <div class="det">
-            <a href="/jee"
-              ><img src="images/courses/book.png" />JEE Preparation</a
-            >
+            <a href="/jee"><img src="IMG/courses/book.png" />JEE Preparation</a>
           </div>
           <div class="det">
-            <a href="/gate"
-              ><img src="images/courses/d1.png" />GATE Preparation</a
-            >
+            <a href="/gate"><img src="IMG/courses/d1.png" />GATE Preparation</a>
           </div>
           <div class="det">
             <a href="/jee#sample_papers"
-              ><img src="images/courses/paper.png" />Sample Papers</a
+              ><img src="IMG/courses/paper.png" />Sample Papers</a
             >
           </div>
           <div class="det">
-            <a href="/quiz"><img src="images/courses/d1.png" />Daily Quiz</a>
+            <a href="/quiz"><img src="IMG/courses/quiz.png" />Daily Quiz</a>
           </div>
         </div>
       </center>
       <div class="cbox">
         <div class="det">
           <a href="/cse"
-            ><img src="images/courses/computer.png" />Computer Courses</a
+            ><img src="IMG/courses/computer.png" />Computer Courses</a
           >
         </div>
         <div class="det">
           <a href="/cse#data"
-            ><img src="images/courses/data.png" />Data Structures</a
+            ><img src="IMG/courses/data.png" />Data Structures</a
           >
         </div>
         <div class="det">
-          <a href="/cse#algo"><img src="images/courses/algo.png" />Algorithm</a>
+          <a href="/cse#algo"><img src="IMG/courses/algo.png" />Algorithm</a>
         </div>
         <div class="det det-last">
           <a href="/cse#projects"
-            ><img src="images/courses/projects.png" />Projects</a
+            ><img src="IMG/courses/projects.png" />Projects</a
           >
         </div>
       </div>
@@ -141,7 +136,7 @@
       <center><p style="font-size: 50px; padding: 100px">About</p></center>
       <div class="about-content">
         <div class="side-image">
-          <img class="sideImage" src="IMG/feature-img3.jpg" />
+          <img class="sideImage" src="IMG/extra/e3.jpg" />
         </div>
         <div class="side-text">
           <h2>What you think about us ?</h2>
@@ -184,25 +179,25 @@
       <div class="smbox">
         <span
           ><center>
-            <div class="data">204</div>
+            <div class="data">202</div>
             <div class="det">Enrolled Students</div>
           </center></span
         >
         <span
           ><center>
-            <div class="data">38</div>
+            <div class="data">54</div>
             <div class="det">Total Courses</div>
           </center></span
         >
         <span
           ><center>
-            <div class="data">94</div>
+            <div class="data">97</div>
             <div class="det">Placed Students</div>
           </center></span
         >
         <span
           ><center>
-            <div class="data">21</div>
+            <div class="data">20</div>
             <div class="det">Total Projects</div>
           </center></span
         >
@@ -218,9 +213,9 @@
       </center>
       <div class="totalcard">
         <div class="card">
-          <center><img src="images/creator/roshan1.jpeg" /></center>
+          <center><img src="IMG/creator/human.jpg" /></center>
           <center>
-            <div class="card-title">Roshan Kumar</div>
+            <div class="card-title">Ayush</div>
             <div id="detail">
               <p>
                 “ You can teach a student a lesson for a day; but if you can
@@ -228,16 +223,18 @@
                 learning process as long as he lives “
               </p>
               <div class="duty"></div>
-              <a href="#" target="_blank"
+              <a
+                href="https://www.linkedin.com/in/ayush--rajput/"
+                target="_blank"
                 ><button class="btn-roshan">Follow +</button></a
               >
             </div>
           </center>
         </div>
         <div class="card">
-          <center><img src="images/creator/roshan2.jpeg" /></center>
+          <center><img src="IMG/creator/human.jpg" /></center>
           <center>
-            <div class="card-title">Roshan Kumar</div>
+            <div class="card-title">Ram Lakhan</div>
             <div id="detail">
               <p>
                 “ Real education should consist of drawing the goodness and the
@@ -245,7 +242,9 @@
                 than the book of humanity “
               </p>
               <div class="duty"></div>
-              <a href="#" target="_blank"
+              <a
+                href="https://www.linkedin.com/in/ayush--rajput/"
+                target="_blank"
                 ><button class="btn-akhil">Follow +</button></a
               >
             </div>
@@ -272,49 +271,49 @@
       </div>
       <a href="subjects/computer_courses.html"
         ><div class="s-card">
-          <img src="IMG/Courses.png" />
+          <img src="IMG/icon/computer-courses.png" />
           <p>Free Online Computer Courses</p>
         </div></a
       >
       <a href="subjects/jee.html"
         ><div class="s-card">
-          <img src="IMG/Study-material.png" />
+          <img src="IMG/icon/brainbooster.png" />
           <p>Building Concepts for Competitive Exams</p>
         </div></a
       >
       <a href="#"
         ><div class="s-card">
-          <img src="IMG/Live class.png" />
+          <img src="IMG/icon/Live_class.png" />
           <p>Online Video Lectures</p>
         </div></a
       >
       <a href="subjects/jee.html#sample_papers"
         ><div class="s-card">
-          <img src="IMG/papers.jpg" />
+          <img src="IMG/icon/papers.jpg" />
           <p>Sample Papers of Various Competitive Exams</p>
         </div></a
       >
       <a href="#"
         ><div class="s-card">
-          <img src="IMG/Career guide.png" />
+          <img src="IMG/icon/Career_guide.png" />
           <p>Performance and Ranking Report</p>
         </div></a
       >
       <a href="#contactus_section"
         ><div class="s-card">
-          <img src="IMG/interview.png" />
+          <img src="IMG/icon/discussion.png" />
           <p>Discussion with Our Tutors & Mentors</p>
         </div></a
       >
       <a href="subjects/quiz.html"
         ><div class="s-card">
-          <img src="IMG/Free Cources.png" />
+          <img src="IMG/icon/q1.png" />
           <p>Daily Brain Teasing Questions to Improve IQ</p>
         </div></a
       >
       <a href="#contactus_section"
         ><div class="s-card">
-          <img src="IMG/support.png" />
+          <img src="IMG/icon/help.png" />
           <p>24x7 Online Support</p>
         </div></a
       >
@@ -322,7 +321,7 @@
 
     <!-- Reviews by Students -->
     <div id="makeitfull">
-      <a href="#review_section"><img src="images/icon/makeitfull.png" /></a>
+      <a href="#review_section"><img src="IMG/icon/makeitfull.png" /></a>
     </div>
     <div class="review">
       <div class="diffSection" id="review_section">
@@ -342,15 +341,13 @@
       <div class="rev-container">
         <div class="rev-card">
           <div class="identity">
-            <img src="images/creator/humanNotExist1.jpg" />
+            <img src="IMG/creator/humanNotExist1.jpg" />
             <p>Sophie Daniel</p>
             <h6>Java</h6>
             <div class="rating">
-              <img src="images/icon/star.png" /><img
-                src="images/icon/star.png"
-              /><img src="images/icon/star.png" /><img
-                src="images/icon/star.png"
-              /><img src="images/icon/star.png" />
+              <img src="IMG/icon/star.png" /><img src="IMG/icon/star.png" /><img
+                src="IMG/icon/star.png"
+              /><img src="IMG/icon/star.png" /><img src="IMG/icon/star.png" />
             </div>
           </div>
           <div class="rev-cont">
@@ -365,15 +362,13 @@
         </div>
         <div class="rev-card">
           <div class="identity">
-            <img src="images/creator/humanNotExist2.jpg" />
+            <img src="IMG/creator/humanNotExist2.jpg" />
             <p>Clayton Clair</p>
             <h6>C/C++</h6>
             <div class="rating">
-              <img src="images/icon/star.png" /><img
-                src="images/icon/star.png"
-              /><img src="images/icon/star.png" /><img
-                src="images/icon/star.png"
-              /><img src="images/icon/star.png" />
+              <img src="IMG/icon/star.png" /><img src="IMG/icon/star.png" /><img
+                src="IMG/icon/star.png"
+              /><img src="IMG/icon/star.png" /><img src="IMG/icon/star.png" />
             </div>
           </div>
           <div class="rev-cont">
@@ -388,15 +383,13 @@
         </div>
         <div class="rev-card">
           <div class="identity">
-            <img src="images/creator/humanNotExist3.jpg" />
+            <img src="IMG/creator/humanNotExist3.jpg" />
             <p>Devyn Sethi</p>
             <h6>JEE</h6>
             <div class="rating">
-              <img src="images/icon/star.png" /><img
-                src="images/icon/star.png"
-              /><img src="images/icon/star.png" /><img
-                src="images/icon/star.png"
-              /><img src="images/icon/star.png" />
+              <img src="IMG/icon/star.png" /><img src="IMG/icon/star.png" /><img
+                src="IMG/icon/star.png"
+              /><img src="IMG/icon/star.png" /><img src="IMG/icon/star.png" />
             </div>
           </div>
           <div class="rev-cont">
@@ -413,15 +406,13 @@
         </div>
         <div class="rev-card">
           <div class="identity">
-            <img src="images/creator/humanNotExist4.jpg" />
+            <img src="IMG/creator/humanNotExist4.jpg" />
             <p>Rylee Phillips</p>
             <h6>Python</h6>
             <div class="rating">
-              <img src="images/icon/star.png" /><img
-                src="images/icon/star.png"
-              /><img src="images/icon/star.png" /><img
-                src="images/icon/star.png"
-              /><img src="images/icon/star.png" />
+              <img src="IMG/icon/star.png" /><img src="IMG/icon/star.png" /><img
+                src="IMG/icon/star.png"
+              /><img src="IMG/icon/star.png" /><img src="IMG/icon/star.png" />
             </div>
           </div>
           <div class="rev-cont">
@@ -544,28 +535,31 @@
     <footer>
       <div class="footer-container">
         <div class="left-col">
-          <img src="images/icon/logo - Copy.png" style="width: 200px" />
+          <h1 style="padding-bottom: 20px">
+            <span style="color: rgb(4, 4, 167)">Study</span>
+            Space
+          </h1>
           <div class="logo"></div>
           <div class="social-media">
-            <a href="#"><img src="images/icon\fb.png" /></a>
-            <a href="#"><img src="images/icon\insta.png" /></a>
-            <a href="#"><img src="images/icon\tt.png" /></a>
-            <a href="#"><img src="images/icon\ytube.png" /></a>
-            <a href="#"><img src="images/icon\linkedin.png" /></a>
+            <a href="#"><img src="IMG/icon\fb.png" /></a>
+            <a href="#"><img src="IMG/icon\insta.png" /></a>
+            <a href="#"><img src="IMG/icon\tt.png" /></a>
+            <a href="#"><img src="IMG/icon\ytube.png" /></a>
+            <a href="#"><img src="IMG/icon\linkedin.png" /></a>
           </div>
           <br /><br />
           <p class="rights-text">
-            Copyright © 2024 Created By GLA University All Rights Reserved.
+            Copyright © 2024 All right are Reserve by Ayush.
           </p>
           <br />
           <p>
-            <img src="images/icon/location.png" /> GLA University<br />Mathura,
+            <img src="IMG/icon/location.png" /> GLA University<br />Mathura,
             Uttar Pradesh 281406
           </p>
           <br />
           <p>
-            <img src="images/icon/phone.png" /> +91-1234-567-890<br /><img
-              src="images/icon/mail.png"
+            <img src="IMG/icon/phone.png" /> +91-1234-567-890<br /><img
+              src="IMG/icon/mail.png"
             />&nbsp; xyz@gmail.com
           </p>
         </div>
@@ -574,18 +568,12 @@
           <div class="border"></div>
           <br />
           <p>Enter Your Email to get our News and updates.</p>
-          <form
-            class="newsletter-form"
-            action="mailto:ayushraj1rajput@gmail.com"
-            method="post"
-          >
+          <form class="newsletter-form">
             <input class="txtb" type="email" placeholder="Enter Your Email" />
             <input class="btn" type="submit" value="Submit" />
           </form>
         </div>
       </div>
     </footer>
-
-    <script src="/javaScript/index.js"></script>
   </body>
 </html>

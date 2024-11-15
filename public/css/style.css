@@ -233,7 +233,7 @@ button {
 }
 .diffSection {
   width: 100%;
-  /*position: relative;*/
+  /* position: relative; */
   justify-content: center;
   align-items: center;
 }
@@ -898,8 +898,7 @@ footer .btn:hover {
     /* top: 0; */
   }
   .quote p,
-  .quote h5,
-  .play {
+  .quote h5 {
     justify-content: center;
     text-align: center;
   }

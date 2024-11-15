@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link rel="shortcut icon" type="png" href="../images/icon/favicon.png" />
-    <title>Quiz on LearnEd</title>
+    <title>Quiz on Study Space</title>
     <link rel="stylesheet" type="text/css" href="/css/quizStyle.css" />
     <script type="text/javascript" src="/javaScript/script.js"></script>
   </head>
@@ -11,47 +10,44 @@
     <header>
       <div class="nav" id="nav">
         <div id="learned-logo">
-          <a href="../index.html"
-            ><img src="../images/icon/logo.png" style="width: 120px"
-          /></a>
+          <a href="/index"
+            ><h1 style="padding-bottom: 20px">
+              <span style="color: rgb(4, 4, 167)">Study</span>
+              Space
+            </h1></a
+          >
         </div>
         <div class="switch-tab" id="switch-tab" onclick="switchTAB()">
-          <img src="../images/icon/menu.png" />
+          <img src="IMG/icon/menu.png" />
         </div>
         <ul id="list-switch">
           <li>
-            <a href="jee.html"
-              ><img src="../images/courses/d1.png" class="icon" />JEE</a
+            <a href="/jee"><img src="IMG/courses/d1.png" class="icon" />JEE</a>
+          </li>
+          <li>
+            <a href="/gate"
+              ><img src="IMG/courses/paper.png" class="icon" />GATE</a
             >
           </li>
           <li>
-            <a href="gate.html"
-              ><img src="../images/courses/paper.png" class="icon" />GATE</a
-            >
-          </li>
-          <li>
-            <a href="computer_courses.html"
-              ><img src="../images/courses/computer.png" class="icon" />Computer
+            <a href="/cse"
+              ><img src="IMG/courses/computer.png" class="icon" />Computer
               Courses</a
             >
           </li>
           <li>
-            <a href="computer_courses.html#data"
-              ><img src="../images/courses/data.png" class="icon" />Data
-              Structures</a
+            <a href="/cse#data"
+              ><img src="IMG/courses/data.png" class="icon" />Data Structures</a
             >
           </li>
           <li>
-            <a href="computer_courses.html#algo"
-              ><img src="../images/courses/algo.png" class="icon" />Algorithm</a
+            <a href="cse/#algo"
+              ><img src="IMG/courses/algo.png" class="icon" />Algorithm</a
             >
           </li>
           <li>
-            <a href="computer_courses.html#projects"
-              ><img
-                src="../images/courses/projects.png"
-                class="icon"
-              />Projects</a
+            <a href="/cse#projects"
+              ><img src="IMG/courses/projects.png" class="icon" />Projects</a
             >
           </li>
         </ul>
@@ -59,7 +55,7 @@
           <input type="search" placeholder="Search" class="srch" /><button
             id="srchbtn"
           >
-            <img src="../images/icon/search.png" />
+            <img src="IMG/icon/search.png" />
           </button>
         </div>
       </div>
@@ -67,7 +63,7 @@
 
     <!-- MAIN Heading of Page -->
     <div class="title" id="title">
-      <span>Daily Quiz on LearnEd</span>
+      <span>Daily Quiz on Study Space</span>
       <div class="shortdesc">
         <br />
         <p>If you think education is expensive, try ignorance</p>
@@ -210,6 +206,6 @@
       </div>
     </div>
 
-    <script type="text/javascript" src="../script.js"></script>
+    <script type="text/javascript" src="javaScript/script.js"></script>
   </body>
 </html>

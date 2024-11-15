@@ -2,6 +2,16 @@
 @import url("https://fonts.googleapis.com/css?family=Dancing+Script&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Open+Sans&display=swap");
 
+:root {
+  --color-primary: rgb(0, 0, 38);
+  --color-secondary: rgb(4, 4, 167);
+  --color-secondary-light: rgb(29, 126, 229);
+
+  --color-black: rgb(0, 0, 0);
+  --color-white: rgb(255, 255, 255);
+  --color-grey: rgb(56, 55, 55);
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -20,11 +30,11 @@ body {
   width: 5px;
 }
 ::-webkit-scrollbar-thumb {
-  background: #fa4b37;
+  background: var(--color-secondary);
   border-radius: 5px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: #df2771;
+  background: var(--color-secondary-light) 1;
 }
 
 /*NAVIGATION BAR*/
@@ -73,12 +83,16 @@ button {
 }
 
 .nav ul li a:hover {
-  color: #fa4b37;
+  color: var(--color-secondary);
 }
 
 .nav button {
   padding: 9px 25px;
-  background: linear-gradient(to right, #fa4b37, #df2771);
+  background: linear-gradient(
+    to right,
+    var(--color-secondary),
+    var(--color-secondary-light) 1
+  );
   color: #fff;
   border: none;
   border-radius: 5px;
@@ -104,7 +118,7 @@ button {
   width: 300px;
   border: none;
   outline: none;
-  border-bottom: 2px solid #fa4b37;
+  border-bottom: 2px solid var(--color-secondary);
   padding: 9px;
 }
 .nav .search button {
@@ -166,7 +180,7 @@ button {
   width: 100%;
   padding: 20px;
   border-radius: 50px;
-  border: 1px solid #fa4b37;
+  border: 1px solid var(--color-secondary);
   font-size: 15px;
   color: #272529;
   font-family: cursive;
@@ -174,7 +188,11 @@ button {
 }
 
 .cbox .det a:hover {
-  background: linear-gradient(to right, #fa4b37, #df2771);
+  background: linear-gradient(
+    to right,
+    var(--color-secondary),
+    var(--color-secondary-light) 1
+  );
   color: white;
 }
 
@@ -204,7 +222,11 @@ button {
   margin: 10px;
   width: 300px;
   height: 200px;
-  background: linear-gradient(to right, #fa4b37, #df2771);
+  background: linear-gradient(
+    to right,
+    var(--color-secondary),
+    var(--color-secondary-light) 1
+  );
   border-radius: 10px;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
 }
@@ -271,7 +293,11 @@ button {
   margin: 20px;
   width: 300px;
   height: 160px;
-  background: linear-gradient(to right, #fa4b37, #df2771);
+  background: linear-gradient(
+    to right,
+    var(--color-secondary),
+    var(--color-secondary-light) 1
+  );
   border-radius: 10px;
 }
 .dcard2:hover .fpart2 img {
@@ -309,13 +335,13 @@ button {
   display: flex;
 }
 .click-me a {
-  color: #df2771;
+  color: var(--color-secondary-light) 1;
   text-decoration: none;
   transition-duration: 0.5s;
   padding: 10px;
 }
 .click-me a:hover {
-  background: #df2771;
+  background: var(--color-secondary-light) 1;
   color: #fff;
 }
 
@@ -364,13 +390,13 @@ button {
 }
 .download a {
   padding: 5px 10px;
-  color: #df2771;
+  color: var(--color-secondary-light) 1;
   font-size: 0.8em;
   visibility: hidden;
 }
 .download:hover a {
   transition: 0.5s ease;
-  background: #df2771;
+  background: var(--color-secondary-light) 1;
   color: #fff;
 }
 
@@ -395,7 +421,7 @@ button {
 }
 
 .sample ul li a {
-  color: #fa4b37;
+  color: var(--color-secondary);
   width: 300px;
   font-size: 20px;
 }
@@ -444,7 +470,11 @@ footer .right-col h1 {
 footer .border {
   width: 100px;
   height: 4px;
-  background: linear-gradient(to right, #fa4b37, #df2771);
+  background: linear-gradient(
+    to right,
+    var(--color-secondary),
+    var(--color-secondary-light) 1
+  );
   margin: 2px;
 }
 
@@ -476,7 +506,11 @@ footer .btn {
   padding: 18px 40px;
   font-size: 16px;
   color: #f1f1f1;
-  background: linear-gradient(to right, #fa4b37, #df2771);
+  background: linear-gradient(
+    to right,
+    var(--color-secondary),
+    var(--color-secondary-light) 1
+  );
   border: none;
   font-weight: 700;
   outline: none;
