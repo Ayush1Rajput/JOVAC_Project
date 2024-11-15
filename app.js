@@ -34,16 +34,6 @@ app.use(express.static(path.join(__dirname, "/public")));
 
 app.use(bodyParser.json());
 
-// fetch title from html
-
-app.post("/api/sendCourseTitle", (req, res) => {
-  const courseTitle = req.body.title;
-  console.log(courseTitle); // Do something with the title
-  // Store the title or pass it to another route as needed
-  res.json({ message: "Title received", title: courseTitle });
-});
-//
-
 // for main(index-page)
 app.get("/index", (req, res) => {
   res.render("listings/index.ejs");
@@ -68,8 +58,37 @@ app.get("/login", (req, res) => {
 app.get("/signup", (req, res) => {
   res.render("listings/signup.ejs");
 });
-app.get("/sub-courses", (req, res) => {
-  res.render("listings/sub-courses.ejs");
+
+app.get("/jee", (req, res) => {
+  res.render("listings/jee.ejs");
+});
+
+app.get("/gate", (req, res) => {
+  res.render("listings/gate.ejs");
+});
+
+app.get("/jee#sample_papers", (req, res) => {
+  res.render("listings/jee#sample_papers");
+});
+
+app.get("/quiz", (req, res) => {
+  res.render("listings/quiz");
+});
+
+app.get("/cse", (req, res) => {
+  res.render("listings/cse");
+});
+
+app.get("/cse#data", (req, res) => {
+  res.render("listings/cse#data");
+});
+
+app.get("/cse#algo", (req, res) => {
+  res.render("listings/cse#algo");
+});
+
+app.get("/cse#projects", (req, res) => {
+  res.render("listings/cse#projects");
 });
 
 // Register User
