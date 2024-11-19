@@ -9,7 +9,7 @@ const bodyParser = require("body-parser");
 
 // Direct MongoDB connection string
 const MONGO_URL = "mongodb://127.0.0.1:27017/Study_Space";
-
+  
 mongoose
   .connect(MONGO_URL, {
     useNewUrlParser: true,
