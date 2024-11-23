@@ -9,7 +9,7 @@ const bodyParser = require("body-parser");
 
 // Direct MongoDB connection string
 const MONGO_URL = "mongodb://127.0.0.1:27017/Study_Space";
-  
+
 mongoose
   .connect(MONGO_URL, {
     useNewUrlParser: true,
@@ -103,7 +103,7 @@ app.post("/signup", async (req, res) => {
     });
 
     await newUser.save();
-    res.status(201).send("User registered successfully");
+    res.status(201).render("listings/login");
   } catch (error) {
     console.error(error);
     res.status(500).send("Internal Server Error");
