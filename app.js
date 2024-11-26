@@ -6,6 +6,7 @@ const methodOverride = require("method-override");
 const ejsMate = require("ejs-mate");
 const bcrypt = require("bcrypt");
 const bodyParser = require("body-parser");
+const session = require("express-session");
 
 // Direct MongoDB connection string
 const MONGO_URL = "mongodb://127.0.0.1:27017/Study_Space";
@@ -22,6 +23,7 @@ mongoose
 const userSchema = new mongoose.Schema({
   name: String,
   password: String,
+  email: String,
 });
 
 const User = mongoose.model("User", userSchema);
@@ -87,7 +89,7 @@ app.get("/cse#projects", (req, res) => {
 
 // Register User
 app.post("/signup", async (req, res) => {
-  const { username, password } = req.body;
+  const { username, password, email } = req.body;
 
   try {
     const existingUser = await User.findOne({ name: username });
@@ -100,6 +102,7 @@ app.post("/signup", async (req, res) => {
     const newUser = new User({
       name: username,
       password: hashedPassword,
+      email: email,
     });
 
     await newUser.save();
@@ -132,6 +135,7 @@ app.post("/login", async (req, res) => {
     res.status(500).send("Internal Server Error");
   }
 });
+
 app.listen(3000, () => {
   console.log("Server is listening on port 3000");
 });
