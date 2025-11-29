@@ -32,6 +32,12 @@ app.use(methodOverride("_method"));
 app.use(express.static(path.join(__dirname, "public")));
 
 // Routes
+
+// Home Route
+app.get("/", (req, res) => {
+  res.render("listings/index");
+});
+
 app.get("/index", (req, res) => {
   res.render("listings/index.ejs");
 });
