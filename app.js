@@ -5,17 +5,11 @@ const path = require("path");
 const methodOverride = require("method-override");
 const ejsMate = require("ejs-mate");
 const bcrypt = require("bcrypt");
-const bodyParser = require("body-parser");
-const session = require("express-session");
 
-// Direct MongoDB connection string
-const MONGO_URL = "mongodb://127.0.0.1:27017/Study_Space";
+require("dotenv").config();
 
 mongoose
-  .connect(MONGO_URL, {
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
-  })
+  .connect(process.env.MONGO_URL)
   .then(() => console.log("Connected to MongoDB"))
   .catch((err) => console.error("MongoDB connection error:", err));
 
@@ -36,7 +30,6 @@ app.set("views", path.join(__dirname, "views"));
 app.engine("ejs", ejsMate);
 app.use(methodOverride("_method"));
 app.use(express.static(path.join(__dirname, "public")));
-app.use(bodyParser.json());
 
 // Routes
 app.get("/index", (req, res) => {
